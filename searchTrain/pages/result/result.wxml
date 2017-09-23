@@ -1,0 +1,32 @@
+<view class="container">
+
+  <view class="items" wx:for="{{result}}">
+    <view class="title  flex-row">
+      <view class="box">
+        <text>{{item.dptStationName}}</text>
+        <text class="time">{{item.dptTime}}</text>
+      </view>
+      <view class="box">
+        <text>{{item.trainNo}}</text>
+        <text class="time">{{item.interval}}</text>
+      </view>
+      <view class="box">
+        <text>{{item.arrStationName}}</text>
+        <text class="time">{{item.arrTime}}</text>
+      </view>
+      <view class="box">
+        <text wx:if="{{item.seats['二等座'].price}}" class="time">￥{{item.seats['二等座'].price}}起</text>
+        <text wx:elif="{{item.seats['硬座'].price}}" class="time">￥{{item.seats['硬座'].price}}起</text>
+        <text wx:elif="{{item.seats['无座'].price}}" class="time">￥{{item.seats['无座'].price}}起</text>
+        <text wx:elif="{{item.seats['硬卧'].price}}" class="time">￥{{item.seats['硬卧'].price}}起</text>
+        <text wx:else="{{item.seats['软卧'].price}}" class="time">￥{{item.seats['软卧'].price}}起</text>
+        <text wx:if="{{item.seats['二等座']}}" class="time">二等座</text>
+        <text wx:elif="{{item.seats['硬座']}}" class="time">硬座</text>
+        <text wx:elif="{{item.seats['无座']}}" class="time">无座</text>
+        <text wx:elif="{{item.seats['硬卧']}}" class="time">硬卧</text>
+        <text wx:elif="{{item.seats['软卧']}}" class="time">软卧</text>
+      </view>
+    </view>
+   
+  </view>
+</view>

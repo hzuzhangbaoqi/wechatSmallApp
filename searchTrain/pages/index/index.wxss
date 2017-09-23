@@ -1,0 +1,46 @@
+/* pages/index/index.wxss */
+page{
+  height: 100%;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background: lightgrey;
+}
+.inHot{
+
+    margin-top:200rpx;
+}
+.item{
+  margin: 30rpx 0;
+
+}
+.item text{
+  margin-right: 52rpx;
+}
+.item input{
+  border: 1px solid #ccc;
+  width:500rpx;
+  height: 80rpx;
+  padding: 5rpx;
+  border-radius: 10rpx;
+}
+.search{
+    margin: 100rpx;
+    width: 60%;
+}
+.search button{
+  width: 100%;
+
+}

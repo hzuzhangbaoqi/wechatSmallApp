@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+     <view class="inHot">
+        <view class="item flex-row">
+             <text>起点</text><input id="from" placeholder="请输入起点" bindinput="fromInput"/></view>
+        <view class="item flex-row">
+             <text>终点</text><input id="from" placeholder="请输入目的地" bindinput="toInput"/></view>
+        <view class="item flex-row">
+             <text>日期</text><input id="form" placeholder="2017-09-21" bindinput="dateInput" /></view>
+        </view>
+        <view class="search">
+           <button type="default"bindtap="searchClick">查询</button>
+        </view>
+     </view>

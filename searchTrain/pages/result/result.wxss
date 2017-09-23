@@ -1,0 +1,46 @@
+/* pages/result/result.wxss */
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.items{
+  width: 100%;
+  height: 200rpx;
+  background: #ccc;
+}
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.title{
+  
+  width: 100%;
+  height: 150rpx;
+  background: #258256;
+}
+.title .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text{
+  font-size: 18px;
+}
+.time{
+    color: red;
+    font-size: 16px;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.surplus{
+  height: 50rpx;
+  color:#222;
+
+}
+.surplus text{
+  font-size: 16px;
+}
